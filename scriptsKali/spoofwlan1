@@ -1,0 +1,10 @@
+#! bin/bash
+# Preparation script for sniffing, must be logged in as root
+echo "derp'n"
+sudo ifconfig wlan1 down
+sudo macchanger -r wlan1
+sudo ifconfig wlan1 up
+sudo ifconfig wlan1mon down
+sudo macchanger -r wlan1mon
+sudo ifconfig wlan1mon up
+echo "Done. Spoofed on Wlan1"

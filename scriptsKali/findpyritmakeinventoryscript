@@ -1,0 +1,9 @@
+find /usr/local/ /tmp/ | grep pyrit | awk '{print "cp -rfv " $1 " /root/Desktop/temppyrit/"}' > "/root/Desktop/PyritScan"
+
+
+
+
+
+
+
+

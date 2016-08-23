@@ -1,0 +1,3 @@
+#!bin/bash
+read -p "press enter to search and create your pyrit purge file"
+find /usr/local/ /tmp/ | grep pyrit | awk '{print "rm -rfv "$1}' > "/root/Desktop/PyritPurge"

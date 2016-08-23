@@ -1,0 +1,16 @@
+#! bin/bash
+# Preparation script for sniffing, must be logged in as root
+read -p "You must be logged in as root. Press enter to run macchanger (wlan0, wlan0mon) and airmon for preparation..."
+echo "Refreshing NICs according to /etc/network/interfaces"
+/etc/init.d/networking restart
+echo "All NICs refreshed! Now setting monitor mode on wlan0 and spoofing a random MAC address on both wlan1 and wlan0mon..."
+sleep 5
+sudo ifconfig wlan1 down
+sudo macchanger -r wlan1
+sudo ifconfig wlan1 up
+sudo airmon-ng check kill
+sudo airmon-ng start wlan1
+sudo ifconfig wlan0mon down
+sudo macchanger -r wlan0mon
+sudo ifconfig wlan0mon up
+echo "Done! You are now refreshed and anonymous! Proceed to PWN!"

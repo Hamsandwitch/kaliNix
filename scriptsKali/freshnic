@@ -1,0 +1,5 @@
+#!bin/bash
+#refreshes NICs
+read -p "Press enter to simply refresh your NICs according to /etc/network/interfaces!"
+echo "Refreshing NICs according to /etc/network/interfaces"
+/etc/init.d/networking restart

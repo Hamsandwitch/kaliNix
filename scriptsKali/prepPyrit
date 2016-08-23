@@ -1,0 +1,11 @@
+#!bin/bash
+#prep custom wpa for SSID
+read -p "press enter to pwn"
+pyrit -e "TargetSSID" create_essid
+clear
+pyrit -i "Location/To/The/Wordlist/WORDLIST" import_passwords
+clear
+pyrit batch
+clear
+pyrit -e "TargetSSID" -f "Location/To/The/Wordlist/WORDLIST" export_cowpatty
+read-p "Press ENTER to quit."
