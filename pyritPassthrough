@@ -1,0 +1,11 @@
+#!bin/bash
+#prep custom wpa for pwn
+read -p "press enter to pwn"
+pyrit -e "networkDisplayName" create_essid
+clear
+pyrit -i "/Location/To/Wordlist/Custom-WPA" import_passwords
+clear
+pyrit batch
+clear
+pyrit -e "networkDisplayName" -f "/Location/For/Salted/Data/cow1.out" export_cowpatty
+read-p "all your base are belong to us"

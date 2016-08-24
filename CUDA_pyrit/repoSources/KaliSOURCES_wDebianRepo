@@ -1,0 +1,15 @@
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+
+# For source package access, uncomment the following line
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+
+## Regular repositories
+deb http://http.kali.org/kali kali main non-free contrib
+deb http://security.kali.org/kali-security kali/updates main contrib non-free
+
+## Source repositories
+deb-src http://http.kali.org/kali kali main non-free contrib
+deb-src http://security.kali.org/kali-security kali/updates main contrib non-free
+
+##deb http://ftp.us.debian.org/debian/ jessie main contrib non-free
+##deb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free
