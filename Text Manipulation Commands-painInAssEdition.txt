@@ -46,4 +46,9 @@ awk '!x[$0]++' file > file.new
 ##This will make your list WPA/WPA2 compatiable by deleting words less than 8 chars and more than 63
 
 
-	bt~# cat passwordlist.txt | pw-inspector -m 8 -M 63 > wpaList.txt
+		bt~# cat passwordlist.txt | pw-inspector -m 8 -M 63 > wpaList.txt
+
+	
+	OR use sed
+	
+		bt~# sed -rn '/.{8,}/p' ./super-wpalist.txt > ./proper.txt
