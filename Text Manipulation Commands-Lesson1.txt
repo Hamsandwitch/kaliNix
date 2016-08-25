@@ -176,13 +176,6 @@ Or it could be used following a more complicated string of commands.
 
 
 
-|------------------|
-| #!! REMEMBER !!# |
-|------------------|
-   |^^|
-   |^^# If working with LOTS of text files, or very large text files, you will want to keep your RAM size in mind. Piping 100GB worth of text through the aforementioned string
-   |^^# of commands would more than likely cause a system lock-up\crash at some point if you're hurting in the RAM dept. When working with large or multiple files like that,
-   |^^# its useful to do one command/section at a time, reboot (clearing your RAM in the process), then continue with the next step, reboot, etc.
 
 ----------------------------------------------------------------------------|
 ----------------------------------------------------------------------------|
@@ -201,7 +194,14 @@ ________________________________________________________________________________
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 						
-						
+
+|------------------|
+| #!! REMEMBER !!# |
+|------------------|
+   |^^|
+   |^^# If working with LOTS of text files, or very large text files, you will want to keep your RAM size in mind. Piping 100GB worth of text through the aforementioned string
+   |^^# of commands would more than likely cause a system lock-up\crash at some point if you're hurting in the RAM dept. When working with large or multiple files like that,
+   |^^# its useful to do one command/section at a time, reboot (clearing your RAM in the process), then continue with the next step, reboot, etc.						
 						
 						
 						

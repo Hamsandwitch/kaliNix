@@ -2,40 +2,48 @@ Text Manipulation Commands - Pain in my ass wordlists edition
 
 
 
+
 awk '!x[$0]++' file > file.new
 
-^ takes input file and removes any duplicate lines from the file. Does not reorganize, and the do not have to be successive lines (i.e. no sort/uniq BS)
+	^ takes input file and removes any duplicate lines from the file. Does not reorganize, and the do not have to be successive lines (i.e. no sort/uniq)
+
 
 
 
 ## this will combine files 1,2,and 3 into the big file. 
 
-bt~# cat file1.txt file2.txt file3.txt > bigfile.txt
+
+	bt~# cat file1.txt file2.txt file3.txt > bigfile.txt
+
+
 
 
 ##For when you want to add or update your old dictionary, simply double the arrow like this......
 
-bt~# cat new_dict.txt >> name_of_old_bigfile.txt
+
+	bt~# cat new_dict.txt >> name_of_old_bigfile.txt
 
 
 
 
 ##For speed, you can put all the files in a directory called wordlists. then cd into the directory and
 
-bt~# cat *.* > /root/bigfile.txt
+	bt~# cat *.* > /root/bigfile.txt
 
-##This will merge all the files in the current directory into 1 .txt wordlist
-
-
+		^ This will merge all the files in the current directory into 1 .txt wordlist
 
 
-This will alphabetize the list and remove the duplicates.
 
-bt~# cat bigfile.txt | sort | uniq  > newbigfile.txt
+
+##This will alphabetize the list and remove the duplicates.
+
+
+	bt~# cat bigfile.txt | sort | uniq  > newbigfile.txt
 
 
 
 
 ##This will make your list WPA/WPA2 compatiable by deleting words less than 8 chars and more than 63
 
-bt~# cat passwordlist.txt | pw-inspector -m 8 -M 63 > wpaList.txt
+
+	bt~# cat passwordlist.txt | pw-inspector -m 8 -M 63 > wpaList.txt
